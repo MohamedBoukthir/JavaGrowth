@@ -38,7 +38,7 @@ class StringAndArrayString {
 //        // to make all the String with Lower Case
 //        System.out.println(str.toLowerCase());
 
-//        // Cast an Variable To String
+//        // Cast a Variable To String
 //        int x = 10;
 //        String str = String.valueOf(x);
 //        // OR
