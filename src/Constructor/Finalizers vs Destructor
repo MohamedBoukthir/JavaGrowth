@@ -1,0 +1,26 @@
+In Java, finalizers are associated with the process of garbage collection.
+The garbage collector is responsible for automatically reclaiming memory occupied by objects that are no longer reachable in a program.
+A finalizer in Java is a method that the garbage collector calls before it reclaims an object's memory to perform any necessary cleanup or resource release.
+
+The finalize() method is used to define a finalizer for a class. It's declared in the Object class, so every class in Java has a finalize() method by default.
+However, it's essential to note that using finalizers is generally discouraged and should be approached with caution.
+There are some drawbacks and considerations when working with finalizers:
+
+Here's an example of a class with a finalizer:
+
+public class MyClass {
+    // Some class members and methods
+
+    @Override
+    protected void finalize() throws Throwable {
+        try {
+            // Cleanup code goes here
+        } finally {
+            super.finalize();
+        }
+    }
+}
+
+It's important to mention that starting from Java 9, the finalize() method has been deprecated,
+and developers are encouraged to use the java.lang.ref. Cleaner API for resource cleanup.
+The Cleaner API provides a more flexible and reliable way to perform cleanup operations without the drawbacks associated with traditional finalizers.
