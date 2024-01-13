@@ -29,6 +29,7 @@ public class Student2 {
         }
     }
 
+
     // Static methods for validate the length of the password
     public static boolean validation(String password) {
         if (password.length() >= minPasswordLength) {
@@ -36,5 +37,6 @@ public class Student2 {
         }
             return false;
     }
+
 
 }

@@ -8,13 +8,20 @@ package Static_Keyword;
 
 public class Main {
     public static void main(String[] args) {
-                                            /* STATIC METHODS */
 
-        Student2 s1 = new Student2("ali","123");
+        /* STATIC CLASS */
 
-        System.out.println(s1.isLoggedIn(1, "123")); // output : true
-        System.out.println(s1.isLoggedIn(1, "1234")); // output : false
 
+        OuterClass.InnerClass object = new OuterClass.InnerClass(); // declaration of an object in nested class
+        object.print();
+
+
+        /* STATIC METHODS */
+
+//        Student2 s1 = new Student2("ali","123");
+//
+//        System.out.println(s1.isLoggedIn(1, "123")); // output : true
+//        System.out.println(s1.isLoggedIn(1, "1234")); // output : false
 
 
         /* STATIC VARIABLES */
@@ -25,7 +32,7 @@ public class Main {
 //        Student1 s3 = new Student1("Anis Boukthir");
 //        Student1 s4 = new Student1("Example name");
 //        Student1 s5 = new Student1("another example");
-//
+
 //        System.out.println(s1.toString()); // output :  Student{studentId=1, studentName='Mohamed Boukthir'}
 //        System.out.println(s2.toString()); // output :  Student{studentId=2, studentName='Daniel Maldini'}
 //        System.out.println(s3.toString()); // output :  Student{studentId=3, studentName='Anis Boukthir'}
