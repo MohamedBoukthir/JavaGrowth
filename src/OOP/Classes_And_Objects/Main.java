@@ -1,4 +1,4 @@
-package Classes_And_Objects;
+package OOP.Classes_And_Objects;
 
 public class Main {
     public static void main(String[] args) {
