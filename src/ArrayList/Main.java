@@ -2,6 +2,7 @@ package ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -71,7 +72,7 @@ public class Main {
 
         // set methods (to override an element in the arraylist)
 
-        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1,2,3,4,4,5));
+     /*   ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1,2,3,4,4,5));
         System.out.println(arrayList.get(0)); // output : 1
         arrayList.set(0, 10);
         System.out.println(arrayList.get(0)); // output : 10
@@ -90,11 +91,53 @@ public class Main {
         arrayList.removeIf(n->n%2 != 0);
         System.out.println(arrayList); // output : [] (empty arrayList because it removes all odd elements)
 
+     */
+
+
+        ArrayList arrayListVariable = new ArrayList<>(Arrays.asList(1,1,2,2,2,3,4,5,6,7,8,9));
+
+        // contain method
+    /*    System.out.println(ArrayListVariable.contains(1)); // true
+        System.out.println(ArrayListVariable.contains(20)); // false
+    */
+        // retainAll method
+    /*    ArrayList arrayList = new ArrayList<>(Arrays.asList(1,2));
+        arrayListVariable.retainAll(arrayList);
+        System.out.println(arrayListVariable); // output : [1, 1, 2, 2, 2]
+    */
+        // subList method
+    /*    ArrayList newList = new ArrayList(arrayListVariable.subList(0, 7));
+        System.out.println(newList); // output : [1, 1, 2, 2, 2, 3, 4]
+    */
+        // isEmpty method
+    /*    System.out.println(arrayListVariable.isEmpty()); // output : false */
+        // clear method (to clear all the elements inside the arrayList)
+    /*    arrayListVariable.clear();
+        System.out.println(arrayListVariable); // output : []
+    */
+        // forEach method
+    /*    arrayListVariable.forEach(a -> System.out.print(a + "MOHAMED ")); // output : 1MOHAMED 1MOHAMED 2MOHAMED 2MOHAMED 2MOHAMED 3MOHAMED 4MOHAMED 5MOHAMED 6MOHAMED 7MOHAMED 8MOHAMED 9MOHAMED */
+        // sort method
+    /*    Collections.sort(arrayListVariable);
+        System.out.println(arrayListVariable); // output : [1, 1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+        // descending sort
+        Collections.sort(arrayListVariable, Collections.reverseOrder());
+        System.out.println(arrayListVariable); // output : [9, 8, 7, 6, 5, 4, 3, 2, 2, 2, 1, 1]
+    */
+        // reverse method
+    /*    Collections.reverse(arrayListVariable);
+        System.out.println(arrayListVariable); // output : [9, 8, 7, 6, 5, 4, 3, 2, 2, 2, 1, 1]
+    */
+        // min - max methods
+        System.out.println(Collections.max(arrayListVariable)); // output : 9
+        System.out.println(Collections.min(arrayListVariable)); // output : 1
+
+
+
+
         // ------------ Array of objects ------------
-        ArrayList arrayOfObjects = new ArrayList<>(Arrays.asList(1, '4', true, "mohamed"));
-        System.out.println(arrayOfObjects); // output : [1, 4, true, mohamed]
-
-
+      /*  ArrayList arrayOfObjects = new ArrayList<>(Arrays.asList(1, '4', true, "mohamed"));
+        System.out.println(arrayOfObjects); // output : [1, 4, true, mohamed] */
 
     }
 }
