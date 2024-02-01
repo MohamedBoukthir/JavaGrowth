@@ -4,7 +4,6 @@ A subclass inherits all the members(**fields, methods, nested classes**) from su
 Constructor are not members, so they are not inherited bu subclasses, **but the constructor
 of the superclass** can be invoked from the subclass.
 
-![Capture.PNG](..%2F..%2F..%2F..%2FCapture.PNG)
 
 # Type of Inheritance
 
