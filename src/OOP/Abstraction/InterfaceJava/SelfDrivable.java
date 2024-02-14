@@ -1,4 +1,4 @@
-package OOP.Abstraction.Interfaces;
+package OOP.Abstraction.InterfaceJava;
 
 public interface SelfDrivable {
 

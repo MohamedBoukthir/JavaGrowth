@@ -1,12 +1,12 @@
-package OOP.Abstraction.Interfaces;
+package OOP.Abstraction.InterfaceJava;
 
-public class Car2 implements Movable, SelfDrivable {
+public class Car implements Movable, SelfDrivable {
 
     private int x,y;
     private int numberOfPassengers;
 
-    public Car2(){}
-    public Car2(int x, int y) {
+    public Car(){}
+    public Car(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -38,7 +38,8 @@ public class Car2 implements Movable, SelfDrivable {
 
     @Override
     public void drive() {
-        System.out.println("drive car2");
+        System.out.println("drive car1");
     }
+
 
 }

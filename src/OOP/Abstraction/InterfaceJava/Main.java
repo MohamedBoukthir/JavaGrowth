@@ -1,4 +1,4 @@
-package OOP.Abstraction.Interfaces;
+package OOP.Abstraction.InterfaceJava;
 
 public class Main {
 
@@ -10,10 +10,12 @@ public class Main {
 
 
 // Polymorphism in interface
-        SelfDrivable car1 = new Car();
+
+    /*    SelfDrivable car1 = new Car();
         car1.drive(); // output : drive car1
         car1 = new Car2();
         car1.drive(); // output : drive car2
+    */
 
 // or
         interfaceMethod(new Car()); // output : drive car1
