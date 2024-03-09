@@ -23,8 +23,8 @@ public class Main {
         reward2.reward(); // output: You have 10$.
         reward3.reward(); // output: You have 20$.
 
-        System.out.println(reward1.getClass()); // output : class AnonymousInnerClass.Reward
-        System.out.println(reward3.getClass()); // output : class AnonymousInnerClass.Main$1
+        System.out.println(reward1.getClass()); // output : class AnonymousInnerClass.md.Reward
+        System.out.println(reward3.getClass()); // output : class AnonymousInnerClass.md.Main$1
         /* The $ symbol mean that the class was an Inner Class */
 
 
@@ -37,5 +37,17 @@ public class Main {
         };
         showable.print(); // output : Show ...
 
+
+        /* ******* Anonymous Inner Class with lambda expression ******* */
+//        Showable showable;
+//            showable = new Showable() {
+//            @Override
+//            public void print() {
+//                System.out.println("Show ...");
+//            }
+//        };
+//
+//        showable = () ->  System.out.println("show lambda");
+//        showable.print(); // output : show lambda
     }
 }
