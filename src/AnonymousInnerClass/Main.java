@@ -1,6 +1,11 @@
 package AnonymousInnerClass;
 
 public class Main {
+
+    public interface Showable {
+        public void print();
+    }
+
     public static void main(String[] args) {
 
         /* ******* Anonymous Inner Class that Extends a class ******* */
@@ -21,6 +26,16 @@ public class Main {
         System.out.println(reward1.getClass()); // output : class AnonymousInnerClass.Reward
         System.out.println(reward3.getClass()); // output : class AnonymousInnerClass.Main$1
         /* The $ symbol mean that the class was an Inner Class */
+
+
+        /* ******* Anonymous Inner Class that implements an interface ******* */
+        Showable showable = new Showable() {
+            @Override
+            public void print() {
+                System.out.println("Show ...");
+            }
+        };
+        showable.print(); // output : Show ...
 
     }
 }
