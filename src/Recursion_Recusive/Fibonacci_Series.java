@@ -17,6 +17,6 @@ class Fibonacci_Series {
     }
 
     public static void main(String[] args) {
-        System.out.println("Fibonacci = " + fibonacci(4));
+        System.out.println("Fibonacci = " + fibonacci(12));
     }
 }
